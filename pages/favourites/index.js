@@ -37,10 +37,13 @@ const onRemoveFromFavourite = (drinkId,drinkTitle,drinkImg) => {
 const onGoToDrink = (routes) => {
 router.push(routes)
 }
+let favouriteDrinks;
+if(favourite.length < 1 || favourite === null){
+  favouriteDrinks = <p className={classes.favouritelist}>Your favourite drink list is empty</p>
+}
 
-let favouriteDrinks = <p className={classes.favouritelist}>Your favourite drink list is empty</p>
 
-if(favourite.length > 0){
+else if(favourite.length > 0 || favourite !== null){
   favouriteDrinks = favourite.map(fav => {
 
     return(

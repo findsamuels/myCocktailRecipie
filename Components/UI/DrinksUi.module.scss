@@ -138,4 +138,18 @@ color: #F8fbfd;
 align-self: center;
 
         }
+
+        @include respond(phone){
+            display: flex;
+            padding: 10px;
+            width: 100%;
+            background-color: $color-brown-dark;
+            color: $color-white;
+            text-align: center;
+            justify-content: center !important;
+            @include boxShadowBottom;
+            &:hover{
+                background-color: $color-brown-light;
+            }
+        }
       }

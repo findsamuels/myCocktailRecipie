@@ -13,7 +13,6 @@ const NonAlchoholic = (props) => {
 
 
 
-
     const searchedValue = useSelector(state=>state.cocktailReducer.searchedValue)
 
     const noAlchoholicValues = Object.values(props.nonAlchoholic)
