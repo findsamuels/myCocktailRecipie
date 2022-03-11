@@ -38,12 +38,7 @@ const onGoToDrink = (routes) => {
 router.push(routes)
 }
 let favouriteDrinks;
-if(favourite.length < 1 || favourite === null){
-  favouriteDrinks = <p className={classes.favouritelist}>Your favourite drink list is empty</p>
-}
 
-
-else if(favourite.length > 0 || favourite !== null){
   favouriteDrinks = favourite.map(fav => {
 
     return(
@@ -71,15 +66,16 @@ else if(favourite.length > 0 || favourite !== null){
         
     )
   })
-}
 
 
   return (
     <div className={classes.FavouriteDrinks} >
       <h3 className={classes.favouriteHeading}>Your selected favourite Drinks </h3>
+
       <div className={classes.favourites}>
       
-      {favouriteDrinks}
+      { favourite.length > 0 ? favouriteDrinks: <p className={classes.favouritelist}>Your favourite drink list is empty</p>}
+  
 </div>
     </div>
     
