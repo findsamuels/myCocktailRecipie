@@ -48,8 +48,8 @@ dispatch(coctailActions.addToFavourite(favouriteDrink))
                 layout='fill'
                 onClick={goToAlchohol} />
                 <h3>{props.drinktitle}</h3>
-                <div className={classes.addToFavourite}>
-                <Icon onClick={() => onAddtoFavourite(props.drinkid,  props.drinktitle, props.drinkimg, props.route )} icon={Favorite} color='white' fontSize='large' className={classes.SearchIcon}/> 
+                <div onClick={() => onAddtoFavourite(props.drinkid,  props.drinktitle, props.drinkimg, props.route )} className={classes.addToFavourite}>
+                <Icon  icon={Favorite} color='white' fontSize='large' className={classes.SearchIcon}/> 
                 <p className={classes.favouriteText}>Add to favourite</p>
                 </div>
   </div>
