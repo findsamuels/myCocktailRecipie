@@ -1,0 +1,125 @@
+@import '../../styles/main.scss';
+
+.ServicePreview{
+display: flex;
+width: 80%;
+margin: 0 auto;
+text-align: center;
+
+flex-direction: column;
+justify-content: space-between ;
+cursor: pointer;
+    margin-top: 60px;
+
+
+    @include respond(phone){
+        margin-top:100px;
+    }
+}
+
+
+.ckList{
+    margin: 20px auto;
+}
+
+.Service{
+max-height: 350px;
+width: 48%;
+position: relative;
+margin-bottom: 50px;
+border-radius: 10px;
+box-shadow: none;
+overflow: hidden;
+@include respond(phone){
+    width: 100%;
+}
+&:hover{
+    box-shadow: none;
+}
+
+
+
+
+
+
+h3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   width: 100%;
+   margin-bottom: 0;
+   background-color: $color-brown-dark;
+   padding: 10px;
+    z-index: 90;
+    font-weight: bolder;
+    color: $color-white;
+    text-align: center;
+    transition: all .8s ease-in-out;
+
+    
+}
+
+
+img{
+
+    height: 100%;
+width: 100%;
+border-radius: 10px;
+transition: all 1s ease-in-out;
+
+
+
+
+}
+
+
+
+
+
+}
+
+.Preview{
+
+    display: flex;
+  
+    width: 100%;
+    justify-content: space-between;
+    transition: .3s ease-in-out;
+
+    @include respond(phone){
+        flex-wrap: wrap;
+    }
+}
+
+
+.DrinkType{
+
+
+    &:hover > img{
+        filter: brightness(30%);
+       transform: scale(1.2);
+    }
+
+    @include respond(tablet){
+        &:hover > h3 {
+        
+            font-size:40px;
+            bottom: 0;
+            background-color: transparent;
+        
+          
+        }
+    }
+
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }

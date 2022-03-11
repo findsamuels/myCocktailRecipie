@@ -1,0 +1,12 @@
+@import '../styles/main.scss';
+
+.Banner{
+    background-color: $color-light-grey;
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}

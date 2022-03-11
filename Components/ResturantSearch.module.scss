@@ -1,0 +1,36 @@
+@import '../styles/main.scss';
+
+.ResturantSearch{
+    min-height: 150px;
+    position: absolute;
+    max-width: 50%;
+    top: 80%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    z-index: 9;
+    text-align: center;
+    
+    padding: 10px;
+
+@include respond(phone){
+    max-width: 80%;
+}
+
+    h1{
+        color: $color-brown-dark;
+        
+        text-transform: capitalize;
+       
+    }
+
+    p{
+        color: $color-dark-grey;
+        font-weight: lighter;
+    }
+    
+}
+
+.ResturantText{
+    padding: 10px;
+}

@@ -1,0 +1,141 @@
+@import '../../styles/main.scss';
+
+
+    .Drink{
+        margin: 0 auto;
+    max-height: 350px;
+    cursor: pointer;
+    min-height: 350px;
+    position: relative;
+    width: 25%;
+    margin: 20px 10px;
+    flex-grow: 1;
+        max-width: 50%;
+    border-radius: 10px;
+    box-shadow: none;
+    overflow: hidden;
+    @include respond(phone){
+        width: 100%;
+        max-width: 100%;
+    }
+    &:hover{
+        box-shadow: none;
+    }
+   
+    
+   
+    
+    
+
+    
+    h3{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       width: 100%;
+       margin-bottom: 0;
+       background-color: $color-brown-dark;
+       padding: 10px;
+        z-index: 90;
+        font-weight: bolder;
+        color: $color-white;
+        text-align: center;
+        transition: all .8s ease-in-out;
+    
+        
+    }
+    
+    
+    .drinkimg{
+  
+        height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+    
+    &:hover{
+        filter: brightness(30%) !important;
+        transform: scale(1.2) !important;  
+    }
+    
+    
+    }
+    
+    
+    
+    
+    
+    }
+
+    .DrinkUi{
+        
+        &:hover > .addToFavourite{
+            display: flex;
+            justify-content: space-around;
+        }
+        @include respond(tablet){
+            &:hover > h3 {
+            
+                font-size:30px;
+                bottom: 0;
+                background-color: transparent;
+            
+              
+            }
+        }
+    }
+    
+    .Preview{
+    
+        display: flex;
+      
+        width: 100%;
+        justify-content: space-between;
+        transition: .3s ease-in-out;
+    
+        @include respond(phone){
+            flex-wrap: wrap;
+        }
+    }
+    
+    
+    @keyframes slideUp {
+        from {
+          transform: translateY(100%);
+        }
+      
+        to {
+          transform: translateY(0%);
+        }
+      }
+
+      .addToFavourite{
+position: absolute;
+top: 0;
+display: none;
+z-index: 99;
+right: 0;
+
+padding: 5px;
+
+
+        .SearchIcon{
+color: goldenrod;
+transition: all .2s ease-in-out;
+
+
+&:hover{
+    transform: scale(1.1);
+    color: orange;
+}
+
+        }
+
+        .favouriteText{
+font-size: 10px;
+color: #F8fbfd;
+align-self: center;
+
+        }
+      }

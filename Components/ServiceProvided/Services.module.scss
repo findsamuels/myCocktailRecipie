@@ -1,0 +1,15 @@
+@import '../../styles/main.scss';
+
+.Services{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    margin-top: 60px;
+
+    @include respond(phone){
+        margin-top:100px;
+    }
+}

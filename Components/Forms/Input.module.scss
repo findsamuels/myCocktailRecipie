@@ -1,0 +1,22 @@
+@import '../../styles/main.scss';
+
+.Input{
+    padding: 15px 0 15px 5px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+
+    &::placeholder{
+        font-size: 1.2em;
+        color: $color-grey;
+
+    }
+    &:focus-visible,&:active
+    {
+        border: none !important;
+    }
+}
+
+.Form{
+    width: 100%;
+}

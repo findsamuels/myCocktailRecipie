@@ -1,0 +1,16 @@
+@import '../../styles/main.scss';
+
+.Button,.Button:visited,.Button:active{
+    border: none;
+    background-color: $color-brown-dark;
+    color: $color-white;
+    @include box-shadow;
+    padding: 10px;
+    
+    cursor: pointer;
+
+
+    &:hover{
+        background-color: $color-brown-light;
+    }
+}

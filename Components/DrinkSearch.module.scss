@@ -1,0 +1,40 @@
+@import '../styles/main.scss';
+
+.DrinkSearch{
+    margin: 0 auto;
+    width: 100%;
+    border: .1px solid $color-grey;
+    padding: 5px;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.MealInput{
+border: none;
+
+}
+
+.MealSearchButton{
+   width: 30%;
+   border-radius: 5px;
+   font-size: 15px;
+
+   @include respond(phone){
+       display: none;
+   }
+}
+
+.SearchIcon{
+    display: none;
+    margin-right: 3;
+    cursor: pointer;
+    @include respond(phone){
+        display: block;
+    }
+    @include respond(tablet){
+        display: none;
+    }
+}

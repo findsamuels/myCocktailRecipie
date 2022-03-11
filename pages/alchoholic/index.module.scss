@@ -1,0 +1,42 @@
+@import '../../styles/main.scss';
+
+
+.Alchoholic{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Drinklist{
+    display: flex;
+flex-wrap: wrap;
+
+
+    width: 80%;
+margin: 0 auto;
+
+justify-content: space-between ;
+
+    margin-top: 60px;
+}
+
+
+.drinkSearch{
+    width: 50%;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto auto auto;   
+    
+   @include respond(phone){
+       width: 80%;
+   }
+    @include box-shadow;
+    
+    h4{
+        text-transform: uppercase;
+        color: $color-white;
+    }
+}
+
+.searchHeading{
+    padding: 10px;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/main.scss';
+
+
+.Card{
+    @include box-shadow;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: $color-white;
+    color: $color-brown-dark;
+    padding: 10px;
+}
+
+.brown{
+    background-color: $color-brown-dark;
+    color: $color-white;
+}
+
+.noShadow{
+    box-shadow: none;
+}
+.noRadius{
+border-radius: 0;
+}
+.noPadding{
+padding: 0;
+}
+.noMargin{
+    margin: 0 auto;
+}

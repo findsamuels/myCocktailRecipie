@@ -1,0 +1,105 @@
+@import '../../styles/main.scss';
+
+
+
+
+.FavouriteDrinks{
+    width: 90%;
+    margin: 0 auto;
+}
+.favouriteHeading{
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    @include box-shadow;
+    text-transform: uppercase;
+    margin: 40px auto 0 auto;
+     @include respond(phone){
+         width: 100%;
+     }
+    }
+
+.favourites{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   width: 100%;
+    margin: 20px auto;
+    
+
+
+p{
+text-align: center;
+}
+
+
+}
+
+
+.favandbutton{
+    border: solid .1px $color-grey;
+    padding: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 20px auto;
+   @include boxShadowBottom;
+    background-color: $color-white
+    ;
+    color: $color-brown-dark;
+}
+
+.favourite{
+    border-radius: 0;
+    position: relative;
+    width: 32%;
+  margin: 50px auto;
+    height: 100%;
+    border: 1px solid $color-grey;
+    flex-direction: column;
+    min-height: 350px;
+    
+
+@include respond(phone){
+    width: 100%;
+}
+
+
+    .favouriteImage{
+        
+width: 100%;
+height: 100%;
+
+border-radius: 0;
+    cursor: pointer;
+    }
+
+    h4{
+        text-align: left;
+      
+
+        text-transform: uppercase;
+    }
+
+
+    button{
+
+        text-align: left;
+        
+        text-transform: uppercase;
+        background-color: transparent;
+        color: $color-brown-dark;
+        border: 1px solid $color-brown-dark;
+        
+
+        &:hover{
+            color: $color-white;
+        }
+    }
+}

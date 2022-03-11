@@ -1,0 +1,63 @@
+@import '../../styles/main.scss';
+
+.Header{
+   
+    background-color: $color-light-grey;
+    width: 100%;
+border-bottom: $color-brown-light solid .1px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    color: $color-brown-dark;
+    font-weight: bold;
+    z-index: 999;
+    height: max-content;
+  
+}
+
+.logo{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+
+
+    @include respond(phone){
+        margin: 0 auto;
+        width: 100%;
+        
+        border-bottom: .1px solid $color-grey;
+
+        padding: 10px;
+
+       
+    }
+}
+
+.Nav{
+display: flex;
+min-width: 50%;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+text-align: center;
+
+@include respond(phone){
+    width: 100%;
+}
+    li{
+list-style: none;
+padding: 0 5px;
+
+    }
+
+    a{
+       text-decoration: none; 
+
+
+       &:hover{
+           color: $color-brown-light;
+       }
+    }
+}

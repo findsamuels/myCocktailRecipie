@@ -1,0 +1,43 @@
+$color-white: #fff;
+$color-brown-light: rgb(133, 75, 0);
+$color-brown-dark: rgb(85, 45, 0);
+$color-grey: #ccc;
+$color-light-grey: #F6fbfd;
+$color-dark-grey: rgb(49, 49, 49);
+$color-black: #000;
+
+$box-shadow: -1px 4px 5px -2px $color-black;
+@mixin box-shadow {
+    box-shadow: -1px 1px 10px -5px $color-black;
+    &:hover{
+        box-shadow:   -1px 1px 14px -5px $color-black;
+    }
+}
+
+@mixin boxShadowBottom{
+    box-shadow: 1px 6px 9px -6px rgba(0,0,0,0.9);
+}
+
+
+
+
+
+
+
+@mixin respond($breakpoints){
+    @if $breakpoints == phone {
+        @media (max-width: 767px)  { @content ; }
+   
+     }
+    @else if $breakpoints == desktop {
+        @media (min-width: 1200) { @content ; }
+     }
+      @else if $breakpoints == laptop {
+        @media (max-width: 1200px) { @content ; }
+     }
+       @else if $breakpoints == tablet {
+        @media (min-width: 767px)  { @content ; }
+     }
+    
+
+}
