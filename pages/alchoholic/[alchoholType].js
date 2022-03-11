@@ -17,6 +17,7 @@ const AlchoholType = props => {
 
         return(
 <DrinkTypeUi
+        key={newd.idDrink}
         drinkId={newd.idDrink}
        drinkImg={newd.strDrinkThumb}
        drinkName={newd.strDrink}
