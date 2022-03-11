@@ -35,9 +35,9 @@ dispatch(coctailActions.addToFavourite(favouriteDrink))
   return (
 
 
-<div className={classes.Drink}  {...props} >
+<div className={classes.Drink} key={props.drinkid}  {...props} >
 <Card>
-  <div key={props.drinkid} className={classes.DrinkUi}>
+  <div  className={classes.DrinkUi}>
   <Image key={props.drinkid}
                 objectFit='fill'
                 className={classes.drinkimg}

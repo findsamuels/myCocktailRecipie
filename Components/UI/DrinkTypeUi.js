@@ -7,7 +7,7 @@ import Icon from '../UI/Icon'
 import { CheckCircle } from '@mui/icons-material'
 const DrinkTypeUi = props => {
   return (
-      <div className={classes.DrinkTypeUi}>
+      <div key={props.drinkId} className={classes.DrinkTypeUi}>
 <Card structure='noPadding'>
     <div className={classes.drinkTypeRow}>
 
@@ -19,12 +19,12 @@ const DrinkTypeUi = props => {
     <ul>
         <h3>Ingredients</h3>
 
-        {props.ingredient1 && <li> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span> {props.ingredient1  }</li>}
-        {props.ingredient2 &&       <li> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient2  }</li>}
-        {props.ingredient3 &&         <li> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient3  }</li>}
-        {props.ingredient4 &&   <li> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient4 }</li>}
+        {props.ingredient1 && <li key={props.ingredient1}> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span> {props.ingredient1  }</li>}
+        {props.ingredient2 &&       <li key={props.ingredient2}> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient2  }</li>}
+        {props.ingredient3 &&         <li key={props.ingredient3}> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient3  }</li>}
+        {props.ingredient4 &&   <li key={props.ingredient4}> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient4 }</li>}
       
-        {props.ingredient5 && <li> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient5}</li> }
+        {props.ingredient5 && <li key={props.ingredient5}> <span><Icon icon={CheckCircle} color='brown' fontSize='small' className={classes.SearchIcon}/> </span>{props.ingredient5}</li> }
     </ul>
 
 <div className={classes.instructions}>
